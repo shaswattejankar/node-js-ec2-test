@@ -4,7 +4,7 @@ var http = require('http');
 http.createServer(function (req, res) {
   res.write('<html><body><h1>Hello World!</h1></body></html>'); //write a response to the client
   res.end(); //end the response
-}).listen(8000); //the server object listens on port 8000
+}).listen(80); //the server object listens on port 8000
 
 // const express = require('express');
 // const app = express();
@@ -13,6 +13,6 @@ http.createServer(function (req, res) {
 //     res.send("<html><body><h1>Hello World!</h1></body></html>");
 // })
 
-// const server = app.listen(5000, function(){
-//     console.log("Node app server started...")
+// const server = app.listen(80, function(){
+//     console.log("Node app server started on port 80...")
 // })
